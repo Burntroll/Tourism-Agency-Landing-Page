@@ -14,6 +14,11 @@ ul li a{
     text-decoration: none;
 }
 
+div img{
+    display: block;
+    width: 100%;
+}
+
 .flex-container{
     display: flex;
     max-width: 992px;
@@ -46,7 +51,7 @@ header .menu{
 }
 
 .apresentacao{
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     justify-content: space-between;
 }
@@ -71,6 +76,37 @@ header .menu{
     display: block;
     text-decoration: none;
     line-height: 50px;
-    margin-top: 10px;
+    margin-top: 15px;
+}
+
+#quem-somos{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+}
+
+#quem-somos h2{
+    font-size: 32px;
+    color: #122A57;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#quem-somos h2::before{
+    content: "";
+    height: 40px;
+    width: 6px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
+
+#quem-somos p{
     margin-bottom: 10px;
+    width: 90%;
+}
+
+#quem-somos img{
+    min-width: 520px;
 }
