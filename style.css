@@ -110,3 +110,69 @@ header .menu{
 #quem-somos img{
     min-width: 520px;
 }
+
+.container-externo{
+    background-color: #122A57;
+    width: 100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding: 50px 0 100px 0;
+}
+
+#servicos h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+    justify-content: center;
+    display: flex;
+}
+
+.list-servicos{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 30px;
+}
+
+.list-servicos .item-servico{
+    text-align: center;
+}
+
+.item-servico a{
+    width: 220px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color:#122A57;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.item-servico p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.item-servico img{
+    width: 80%;
+    margin: auto;
+}
+
+.item1{
+    position: relative;
+    bottom: 2px;
+}
+
+.item3{
+    position: relative;
+    bottom: 6px;
+}
