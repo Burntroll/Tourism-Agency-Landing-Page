@@ -24,6 +24,7 @@ div img{
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
 }
 
 header{
@@ -51,7 +52,7 @@ header .menu{
 }
 
 .apresentacao{
-    height: 80vh;
+    height: 60%;
     align-items: center;
     justify-content: space-between;
 }
@@ -109,7 +110,8 @@ header .menu{
 }
 
 #quem-somos img{
-    min-width: 520px;
+    min-width: 500px;
+    margin: auto;
 }
 
 .container-externo{
@@ -200,6 +202,7 @@ header .menu{
     margin-right: 20px;
     padding: 10px;
     max-width: 240px;
+    margin-bottom: 20px;
 }
 
 .item-plano .btn{
@@ -256,4 +259,166 @@ footer{
 
 footer .footer{
     justify-content: space-between;
+}
+
+/*************
+*** MOBILE ***
+*************/
+
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .menu{
+        align-items: center;
+    }
+
+    .menu h1{
+        font-size: 46px;
+        margin-bottom: 5px;
+    }
+
+    .list-items{
+        margin-bottom: 5px;
+    }
+
+    header{
+        margin-bottom: 30px;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao img{
+        height: 90%;
+        width: 90%;
+    }
+    .apresentacao .texto-apresentacao{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .quem-somos{
+        flex-direction: column-reverse;
+    }
+
+    #servicos{
+        margin-top: 60px;
+    }
+
+    #servicos h2{
+        margin-bottom: -30px;
+    }
+
+    .list-servicos{
+        flex-direction: column;
+    }
+
+    .item-servico img{
+        width: 30%;
+        height: 30%;
+        margin: auto;
+        margin-top: 70px;
+    }
+
+    #planos{
+        margin-top: 80px;
+    }
+
+    #planos h2{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .list-planos .item-plano{
+        max-width: 90%;
+        margin: auto;
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    footer p{
+        display: flex;
+        align-self: center;
+    }
+
+}
+
+@media(max-width: 730px){
+    #quem-somos{
+        flex-direction: column-reverse;
+        height: 60%;
+    }
+
+    .quem-somos-text{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 530px){
+    .menu h1{
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .menu ul li{
+        font-size: 14px;
+    }
+
+    .list-planos .btn{
+        width: 80%;
+        height: 30%;
+        line-height: 50px;
+    }
+
+    #planos{
+        margin-top: 60px;
+    }
+
+    .list-planos .item-plano{
+        width: 50%;
+
+    }
+
+    header{
+        margin-bottom: 16px;
+        height: 80px;
+    }
+}
+
+@media(max-width: 420px){
+    #quem-somos img{
+        min-width: 280px;
+    }
+
+    .quem-somos-text{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    #planos{
+        margin-top: 40px;
+    }
+
+    .list-planos .item-plano{
+        width: 60%;
+
+    }
 }
